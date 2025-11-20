@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Kanneboyina Meghana — Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+         :root {
+            --accent: #e9f7f7;
+            --teal: #2b6b68;
+            --muted: #6b6b6b;
+            --card: #ffffff;
+            --glass: rgba(255, 255, 255, 0.6);
+        }
+        
+        * {
+            box-sizing: border-box
+        }
+        
+        body {
+            font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto;
+            margin: 0;
+            background: #f7fbfb;
+            color: #16323a
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 32px auto;
+            padding: 28px;
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: 28px
+        }
+        
+        .sidebar {
+            background: linear-gradient(180deg, var(--accent), #fff);
+            padding: 28px;
+            border-radius: 14px;
+            box-shadow: 0 6px 20px rgba(20, 30, 40, 0.06)
+        }
+        
+        .photo-wrap {
+            display: flex;
+            justify-content: center
+        }
+        
+        .photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 8px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 6px 18px rgba(10, 20, 30, 0.08)
+        }
+        
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block
+        }
+        
+        h1.name {
+            font-size: 20px;
+            text-align: center;
+            margin: 16px 0 6px;
+            letter-spacing: 2px
+        }
+        
+        p.role {
+            text-align: center;
+            color: var(--muted);
+            margin: 0 0 12px
+        }
+        
+        .section {
+            margin-top: 18px
+        }
+        
+        .section h3 {
+            font-size: 13px;
+            margin: 0 0 8px;
+            color: var(--teal);
+            letter-spacing: 1px
+        }
+        
+        .contact-item {
+            font-size: 14px;
+            color: #16323a;
+            display: flex;
+            gap: 8px;
+            align-items: flex-start;
+            margin: 8px 0
+        }
+        
+        .skills ul {
+            padding-left: 18px;
+            margin: 6px 0
+        }
+        
+        .main {
+            background: var(--card);
+            padding: 28px;
+            border-radius: 14px;
+            box-shadow: 0 6px 20px rgba(20, 30, 40, 0.06)
+        }
+        
+        .about {
+            display: flex;
+            align-items: flex-start;
+            gap: 18px
+        }
+        
+        .about p {
+            color: var(--muted);
+            line-height: 1.5
+        }
+        
+        .headline {
+            font-size: 18px;
+            margin: 6px 0 12px;
+            color: #0d2b2a
+        }
+        
+        .chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 12px 0
+        }
+        
+        .chip {
+            background: var(--accent);
+            padding: 8px 10px;
+            border-radius: 999px;
+            font-weight: 600
+        }
+        
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 18px
+        }
+        
+        .projects li {
+            margin-bottom: 8px
+        }
+        
+        .footer {
+            margin-top: 18px;
+            font-size: 13px;
+            color: var(--muted)
+        }
+        
+        @media(max-width:880px) {
+            .container {
+                grid-template-columns: 1fr;
+                padding: 18px
+            }
+            .photo {
+                width: 150px;
+                height: 150px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="photo-wrap">
+                <div class="photo">
+                    <img src="https://image2url.com/images/1763610356979-ef45a522-dc8c-4b62-95d0-a1ed7d37dc26.jpg" alt="Kanneboyina Meghana Photo">
+                </div>
+            </div>
+
+            <h1 class="name">Kanneboyina Meghana</h1>
+            <p class="role">B.Tech — Computer Science & Artificial Intelligence</p>
+
+            <div class="section contact">
+                <h3>Contact</h3>
+                <div class="contact-item">📞 &nbsp; <span>8897197791</span></div>
+                <div class="contact-item">✉️ &nbsp; <span>kanneboinameghana@gmail.com</span></div>
+                <div class="contact-item">🔗 &nbsp; <span><a href="#" target="_blank">LinkedIn profile</a></span></div>
+                <div class="contact-item">💻 &nbsp; <span><a href="#" target="_blank">GitHub / Projects</a></span></div>
+            </div>
+
+            <div class="section skills">
+                <h3>Expertise</h3>
+                <ul>
+                    <li>Java, Python</li>
+                    <li>HTML / CSS / JavaScript</li>
+                    <li>Machine Learning / NLP</li>
+                    <li>SQL, Data Engineering</li>
+                    <li>Computer Networks</li>
+                </ul>
+            </div>
+
+            <div class="section language">
+                <h3>Languages</h3>
+                <div>English, Hindi, Telugu</div>
+            </div>
+
+            <div class="section education">
+                <h3>Education</h3>
+                <div>
+                    B.Tech — SR University (CSE & AI) <br> CGPA: 8.2/10
+                </div>
+            </div>
+        </aside>
+
+        <main class="main">
+            <section class="about">
+                <div style="flex:1">
+                    <h2 class="headline">About Me</h2>
+                    <p>Motivated and detail-oriented professional with a strong foundation in Java programming and problem solving. Passionate about Artificial Intelligence and eager to contribute technical expertise and innovation to a dynamic team. Seeking
+                        internship opportunities to apply my knowledge and gain hands-on experience.</p>
+
+                    <div class="chips">
+                        <div class="chip">Java</div>
+                        <div class="chip">Machine Learning</div>
+                        <div class="chip">Data Engineering</div>
+                        <div class="chip">NLP</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section projects">
+                <div class="section-title">
+                    <h3>Projects & Highlights</h3>
+                </div>
+                <ul>
+                    <li><strong>Gitzan Music Dataset</strong> — music recommender + classification using ML (Logistic Regression, SVM, Random Forest).</li>
+                    <li><strong>Music Model</strong> — NLP + ML techniques for music analysis and prediction.</li>
+                    <li><strong>Obesity prediction</strong> — deep learning model.</li>
+                </ul>
+            </section>
+
+            <section class="section internships">
+                <div class="section-title">
+                    <h3>Internships & Certifications</h3>
+                </div>
+                <ul>
+                    <li>Oasis Infobyte — Web Development (June–July 2025)</li>
+                    <li>Java Full-Stack Developer Virtual Internship (Apr–Jun 2025)</li>
+                    <li>Juniper Mist — AI Virtual Internship (Oct–Dec 2024)</li>
+                    <li>AWS Data Engineering Virtual Internship (Jan–Mar 2025)</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <div class="section-title">
+                    <h3>Additional Certifications</h3>
+                </div>
+                <ul>
+                    <li>Introduction to Artificial Intelligence (InfySpringboard)</li>
+                    <li>Introduction to Deep Learning (InfySpringboard)</li>
+                    <li>Cisco: Introduction to Networks</li>
+                    <li>AWS Academy: Data Engineering & Cloud</li>
+                </ul>
+            </section>
+
+            <div class="footer">
+                <p>Want edits? Tell me what to change (colors, sections, add links or downloadables) and I will update the file.</p>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
